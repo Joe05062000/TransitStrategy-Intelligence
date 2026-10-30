@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+.ipynb_checkpoints/
+
+# Derived/processed data is regenerated from data/raw/ at runtime; keep local only.
+# The validated real NTD source workbook(s) in data/raw/ ARE committed --
+# the deployed app loads them directly, with no upload/import step required.
+data/processed/*
+!data/processed/.gitkeep
+data/raw/.~*
+data/raw/~*
+
+.streamlit/secrets.toml
